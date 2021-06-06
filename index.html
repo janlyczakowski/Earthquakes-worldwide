@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan Łyczakowski Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>    
+  <header>
+
+    <button class="nav_toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="#home" class="nav_link" id="nav_link_home">Home</a></li>
+        <li class="nav_item"><a href="#about" class="nav_link">About me</a></li>
+        <li class="nav_item"><a href="#my_interests" class="nav_link">My interests</a></li>
+        <li class="nav_item"><a href="#work" class="nav_link">My work</a></li>
+        <li class="nav_item"><a href="https://drive.google.com/file/d/198GWIvq6VLHIeK_wjMZVlsnHg9q-fTG1/view?usp=sharing" class="nav_link">CV</a></li>
+      </ul>
+    </nav>
+
+    <div class="img_container" id="home">
+      <img src="img/earth_lights.gif" class="header_img"alt="Earth with lights">
+      <h1 class="title_picture">
+       Jan Łyczakowski
+      </h1>
+    </div>
+  </header>
+
+  
+  <!-- Introduction -->
+  <section class="intro" id="about">
+    <h2 class="section__title section__title-intro">
+     About me
+    </h2>
+    <p class="section_intro_content">I am graduate geodesy and cartography student at the Warsaw University of Technology who found his passion in geoinformatics. Since secondary school, I am passionate about geography. That’s where my interests came from. I am fond of programming, developing apps and websites. I believe that my geodetic and cartographic background is an advantage in the geoinformatics field as well as huge motivation and constant willingness to learn and improve. </p>
+    <img src="img/Me_Pogliano.png"  class="intro_picture"alt=" Jan Łyczakowski smiling in Polignano a Mare">
+   
+  </section>
+
+
+  <!-- My interest -->
+  <section class="my_interests" id="my_interests">
+    <h2 class="section__title section__title_interests">My interests</h2>
+    <div class="interests">
+      <div class="interest">
+        <img class= 'interest_img' src="img/cartography.JPG" alt='map icon'>
+        <h3 class="interest_description">Cartographic visualizations
+        </h3>
+      </div>
+
+      <div class="interest">
+        <img class= 'interest_img' src="img/web2.JPG" alt='computer with a globe'>
+        <h3 class="interest_description">Web/GIS development</h3>
+      </div>
+   
+
+      <div class="interest">
+        <img class= 'interest_img' src="img/gis.JPG" alt='layers'>
+        <h3 class="interest_description" >GIS analysis</h3>
+      </div>
+    </div>
+      
+  </section>
+
+
+  <!-- My Work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title_my_work">My work</h2>
+    <ul class="categories generic_categories">
+
+      <li class="generic_category active category" data-filter="all">All</li>
+      <li class="generic_category category" data-filter="gis">GIS</li>
+      <li class="generic_category category" data-filter="fun">Other</li>
+
+    </ul>
+    
+
+    <ul class="categories">
+      <li class="category_tech category active"data-filter="all">All</li>
+      <li class="category_tech category"data-filter="html">HTML</li>
+      <li class="category_tech category"data-filter="css">CSS</li>
+      <li class="category_tech category"data-filter="javascript">JavaScript</li>
+      <li class="category_tech  category"data-filter="leaflet">Leaflet</li>
+      <li class=" category_tech category"data-filter="luciadlightspeed">LuciadLightspeed</li>
+      <li class="category_tech category"data-filter="java">Java</li>
+
+    </ul>
+
+
+
+    <div class="portfolio">
+      
+        <!-- Portfolio item 01 -->
+        <a href="portfolio_item1.html" class="portfolio_item" data-spec="java luciadlightspeed" data-gen="gis">
+          <div class="portfolio_item_cover_text" data-attribute='gliders'>An analysis of the possibilities of geospatial dynamic data’s visualization using the LUCIAD software</div>
+          <img src="img/gliders500x500.png" alt="" class="portfolio_img" data-attribute='gliders'>
+          
+        </a>
+  
+        <!-- Portfolio item 02 -->
+        <a href="portfolio_item2.html" class="portfolio_item" data-spec="html css javascript leaflet" data-gen="gis">
+          <div class="portfolio_item_cover_text" data-attribute='earthquakes'>Latest worldwide earthquakes
+          </div>
+          <img src="img/earthquake500x500.png" alt="" class="portfolio_img" data-attribute='earthquakes'>
+        </a>
+      
+        <!-- Portfolio item 03 -->
+        <a href="portfolio_item3.html" class="portfolio_item" data-spec="html css javascript" data-gen="fun">
+          <div class="portfolio_item_cover_text" data-attribute='sebs'>Seb's jazz club</div>
+          <img src="img/seb500x500.png" alt="" class="portfolio_img" data-attribute='sebs'>
+        </a>
+  
+        <!-- Portfolio item 04 -->
+        <a href="portfolio_item4.html" class="portfolio_item" data-spec="html css javascript"  data-gen="fun">
+          <div class="portfolio_item_cover_text" data-attribute='notebook'>Notebook</div>
+          <img src="img/ntoebook500x500.png" alt="" class="portfolio_img" data-attribute='notebook'>
+        </a>
+      
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer >
+    <a href="mailto:lyczakowski.jan@gmail.com" class="footer_link">lyczakowski.jan@gmail.com</a>
+    <ul class="social_list">
+      <li class="social_list_item"><a class="social_list_link" href="https://www.facebook.com/profile.php?id=100007065589219"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+      <li class="social_list_item"><a class="social_list_link" href="https://www.instagram.com/lyczakowskijanek/"><i class="fab fa-instagram fa-lg"></i></a></li>
+
+    </ul>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
